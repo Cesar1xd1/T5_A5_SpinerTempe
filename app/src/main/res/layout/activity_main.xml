@@ -7,12 +7,89 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/lbA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="64dp"
+        android:text="A"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spEntrada" />
+
+    <Spinner
+        android:id="@+id/spSalida"
+        android:layout_width="234dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="88dp"
+        android:background="@color/purple_200"
+        android:backgroundTint="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbA" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversor de Temperaturas"
+        android:textColor="#A183D6"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/lbConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="28dp"
+        android:text="Convertir"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <EditText
+        android:id="@+id/etEntrada"
+        android:layout_width="111dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="93dp"
+        android:background="@color/purple_200"
+        android:backgroundTint="@color/purple_200"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <Spinner
+        android:id="@+id/spEntrada"
+        android:layout_width="234dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="21dp"
+        android:background="@color/purple_200"
+        android:backgroundTint="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbConvertir" />
+
+    <TextView
+        android:id="@+id/tvSalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="59dp"
+        android:background="@color/purple_200"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spSalida" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
